@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SubConverter Web</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="card">
+  <div class="title">SubConverter</div>
+  <div class="desc">Subscription Conversion Tool</div>
+
+  <label>订阅链接</label>
+  <div class="row">
+    <input id="url" placeholder="https://example.com/sub">
+    <select id="target">
+      <option value="clash">Clash</option>
+      <option value="clashr">ClashR</option>
+      <option value="clashmeta">Clash Meta</option>
+      <option value="singbox">Sing-box</option>
+      <option value="surge">Surge</option>
+      <option value="quantumult">Quantumult</option>
+      <option value="quantumultx">Quantumult X</option>
+      <option value="loon">Loon</option>
+      <option value="surfboard">Surfboard</option>
+      <option value="mellow">Mellow</option>
+      <option value="sstap">SSTap</option>
+      <option value="kitsunebi">Kitsunebi</option>
+      <option value="ss">Shadowsocks</option>
+      <option value="ssr">ShadowsocksR</option>
+      <option value="trojan">Trojan</option>
+      <option value="v2ray">V2Ray</option>
+    </select>
+  </div>
+
+  <div class="btns">
+    <button onclick="convertSub()">转换</button>
+    <button onclick="copyText()">复制</button>
+    <button onclick="downloadFile()">下载</button>
+  </div>
+
+  <textarea id="result"></textarea>
+
+  <div class="footer">Powered by SubConverter</div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
